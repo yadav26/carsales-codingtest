@@ -18,7 +18,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/home_create_vehicle.PNG?raw=true)
 
 ## Create first Vehicle with custom properties e.g. car with default properties ( make & model )
-![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/OnSelectAddVehicleTypeInDropDown?raw=true)
+![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/OnSelectAddVehicleTypeInDropDown.PNG?raw=true)
 
 ## Add custom properties for car e.g. id as type string 
 ![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/AddCustomProperties?raw=true)
