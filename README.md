@@ -1,4 +1,4 @@
-# CarsaleManagement
+## CarsaleManagement
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
@@ -6,34 +6,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Home Screen
+# Home Screen
 ![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/home_create_vehicle.PNG?raw=true)
 
-## Create first Vehicle with custom properties e.g. car with default properties ( make & model )
+# Create first Vehicle with custom properties e.g. car with default properties ( make & model )
 ![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/OnSelectAddVehicleTypeInDropDown.PNG?raw=true)
 
-## Add custom properties for car e.g. id as type string 
-![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/AddCustomProperties?raw=true)
+# First Vehicle created view i.e car
+![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/VehicleCreatedView.PNG?raw=true)
 
-## Listing of multiple vehicles including car and other vehicle types (planes/ship/car)  
-![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/MultipleVehiclesCreated?raw=true)
+# Add custom properties for car e.g. id as type string 
+![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/AddCustomProperties.PNG?raw=true)
 
-## Listing of multiple vehicles including car and other vehicle types (planes/ship/car)  
-![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/MultipleVehiclesCreated?raw=true)
+# List multiple vehicle types (including car)e.g. planes, ship, car  
+![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/MultipleVehiclesCreated.PNG?raw=true)
 
->Use Modify button to add custom properties e.g. Engine(string), id(number), doors(number) etc.
->Use add <VehicleTypes> entry to add entries like BMW or Toyota or Boeing
+Use Modify button to add custom properties e.g. Engine(string), id(number), doors(number) etc.
+Use add <VehicleTypes> entry to add entries like BMW or Toyota or Boeing
   
-## Listing of multiple vehicles including car and other vehicle types (planes/ship/car)  
-![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/MultipleVehiclesCreated?raw=true)  
+## Listing of multiple types of vehicles including car and other vehicle types (planes/ship/car)  
+![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/MultipleVehiclesEntriesVariousProperties.PNG?raw=true)  
 
 
 
