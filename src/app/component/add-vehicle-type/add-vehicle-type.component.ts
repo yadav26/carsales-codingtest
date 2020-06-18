@@ -62,6 +62,7 @@ export class AddVehicleTypeComponent implements OnInit {
   addVehicleProperty()
   {
     let val = this.vehicleMap[this.vehicleName.toLowerCase()];
+    if(val == undefined) return;
     if(null == val.find( e => e.name == this.propname.toLowerCase())){
       val.push({name :this.propname.toLowerCase(), type: this.proptype.toLowerCase()});
       this.messageEvent.emit(`Success adding ${this.vehicleName}.${this.propname}|${this.proptype} property.`);
