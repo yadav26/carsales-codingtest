@@ -17,6 +17,26 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Home Screen
 ![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/home_create_vehicle.PNG?raw=true)
 
+## Create first Vehicle with custom properties e.g. car with default properties ( make & model )
+![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/OnSelectAddVehicleTypeInDropDown?raw=true)
+
+## Add custom properties for car e.g. id as type string 
+![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/AddCustomProperties?raw=true)
+
+## Listing of multiple vehicles including car and other vehicle types (planes/ship/car)  
+![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/MultipleVehiclesCreated?raw=true)
+
+## Listing of multiple vehicles including car and other vehicle types (planes/ship/car)  
+![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/MultipleVehiclesCreated?raw=true)
+
+>Use Modify button to add custom properties e.g. Engine(string), id(number), doors(number) etc.
+>Use add <VehicleTypes> entry to add entries like BMW or Toyota or Boeing
+  
+## Listing of multiple vehicles including car and other vehicle types (planes/ship/car)  
+![alt text](https://github.com/yadav26/carsales-codingtest/blob/master/src/assets/docs/MultipleVehiclesCreated?raw=true)  
+
+
+
 Develop a mini-Carsales application
 
 Summary
