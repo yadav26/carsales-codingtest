@@ -1,0 +1,14 @@
+
+<div *ngIf="showVehicleEntryForm">
+    <form [formGroup]="entryForm" >
+        <div formArrayName="aliases">
+            <div *ngFor="let filter of this.aliases.controls; let i = index;">
+                <div [formGroupName]="i">
+                    Alias:
+                    <input type="text"  formControlName="data" placeholder={{filter.value.name}}>
+                </div>
+            </div>
+        </div>
+        <button (click)="addEntry()">Save </button>
+    </form>
+</div>

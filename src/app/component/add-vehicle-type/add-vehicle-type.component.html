@@ -1,0 +1,81 @@
+<ngb-toast *ngIf="showMessageNotification" header="Click notification →" [autohide]="false"  (hide)="close()">
+  {{message}}
+</ngb-toast>
+
+<h4>List of Vehicles</h4>
+<div class="grid">
+    <div *ngFor="let vehicle of vehicleEntryDetails | async; let i=index;">
+        <div class="row">
+            <div class="col-1">
+                <button class="btn btn-danger btn-sm" (click)="removeVehicle(i)">Remove</button>
+            </div>
+            <div class="col-1">
+                {{i+1}}. {{vehicle.name}}
+            </div>  
+            <div *ngFor="let vdata of vehicle.values;">     
+                <div class="col=2">  [{{vdata.key.name}}|{{vdata.data}}]   </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Add vehicle entry</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <div *ngFor="let item of vehicleMap | keyvalue">
+            <button ngbDropdownItem>{{item.key}}
+                <button class="btn btn-secondary btn-sm" 
+                    (click)="createEntry(item.key);  
+                    addEntry.showVehicleEntryForm=true; 
+                    showNewVehicleForm=false; 
+                    enableTypeEdit=true;">
+                    add {{item.key}} entry
+                </button>
+                <button class="btn btn-warning btn-sm" 
+                    (click)="createVehicle(item.key); 
+                    showNewVehicleForm=true; 
+                    enableTypeEdit=false;  
+                    addEntry.showVehicleEntryForm=false; 
+                    vehicleName=item.key;">Modify</button>
+            </button>
+        </div>
+        <button ngbDropdownItem>....create new vehicle type
+            <button class="btn btn-secondary btn-sm" 
+                (click)="createEntry('new'); 
+                showNewVehicleForm=true; 
+                enableTypeEdit=true; 
+                addEntry.showVehicleEntryForm=false; 
+                vehicleName='';">
+                Add vehicle type
+            </button></button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="showNewVehicleForm">
+    <table  id="table" data-toggle="table" >
+        <tbody>
+        <tr>
+            <td>Vehicle Type</td>
+            <ng-container *ngIf="enableTypeEdit; else elseNotDone">
+                <td><input type='text' [(ngModel)]='vehicleName' placeholder="enter vehicle name you want to create"></td>
+            </ng-container>
+            <ng-template #elseNotDone>
+            <td><input type='text' [(ngModel)]='vehicleName' disabled></td>
+            </ng-template>
+        </tr>
+        <tr>
+            <td>Add new vehicle property:</td>
+            <td><input type='text' [(ngModel)]='propname' placeholder="add property to vehicle"></td>
+        </tr>
+        <tr>
+            <td>Add new property data-type</td>
+            <td><input type='text' [(ngModel)]='proptype' placeholder="set property data type (string/number)"></td>
+        </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" (click)="createVehicle(vehicleName)">Add vehicle property</button>
+</div>
+
+<app-add-vehicle-entry></app-add-vehicle-entry>
+
